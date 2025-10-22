@@ -6,6 +6,7 @@ import { testimonials } from "../../content/constant";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 const Testimonials = () => {
+  return null;
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,

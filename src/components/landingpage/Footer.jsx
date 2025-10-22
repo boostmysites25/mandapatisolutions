@@ -7,23 +7,23 @@ import { FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="pt-7">
+    <div className="pt-4">
       <div
-        className="bg-cover bg-no-repeat bg-center pt-[5rem] pb-7 space-y-8"
+        className="bg-cover bg-no-repeat bg-center pt-12 pb-6"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className="wrapper space-y-8">
-          <div className="flex justify-between flex-wrap gap-7">
+        <div className="wrapper">
+          <div className="flex justify-between flex-wrap gap-6 mb-6">
             <div className="flex justify-start">
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2">
                 <img
                   loading="lazy"
                   src={logo}
                   alt="logo"
-                  className="w-[13rem] object-contain"
+                  className="w-[15rem] object-contain"
                 />
                  
-                <div className="flex items-center gap-3 pt-3">
+                <div className="flex items-center gap-3 pt-2">
                   <Link
                     to={companyDetails.facebook}
                     className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
@@ -64,9 +64,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-2">
               <h5 className="text4 underline underline-offset-4">Our Office</h5>
-              <ul className="flex flex-col gap-2 list-disc pl-5">
+              <ul className="flex flex-col gap-1 list-disc pl-5">
                 <li className="text-sm">
                   <Link to={`tel:${companyDetails.phone}`} className="link">
                     {companyDetails.phone}
@@ -81,7 +81,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <hr className="border-white/20" />
+          <hr className="border-white/20 my-4" />
           <p className="text-sm text-center">
             Copyright © {new Date().getFullYear()} Mandapati Solutions| All
             Rights Reserved

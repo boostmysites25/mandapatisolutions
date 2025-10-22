@@ -18,13 +18,13 @@ const Faq = ({ showButton }) => {
         </h2>
         <div className="grid md:grid-cols-[45%_1fr] gap-7">
           <div className="flex flex-col rounded-xl overflow-hidden relative">
-            <div className="absolute z-[1] right-2 top-2 bg-white text-primary p-5 rounded-[1rem] shadow-xl flex items-center gap-3">
+            {/* <div className="absolute z-[1] right-2 top-2 bg-white text-primary p-5 rounded-[1rem] shadow-xl flex items-center gap-3">
               <h2 className="text2 !font-bold">1.5k+</h2>
               <p className="desc !text-base max-w-[5rem] !leading-tight">
                 {" "}
                 Satisfied Clients Globally
               </p>
-            </div>
+            </div> */}
             <img
               loading="lazy"
               src={img}

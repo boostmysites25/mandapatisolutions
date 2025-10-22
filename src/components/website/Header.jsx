@@ -97,7 +97,7 @@ const Header = () => {
               href="/"
               className="flex items-center gap-2"
             >
-              <img src={logo} alt="logo" className="w-[5rem] sm:w-[6rem]" />
+              <img src={logo} alt="logo" className="w-[10rem] sm:w-[13rem]" />
             </a>
 
             {/* Desktop Navigation */}

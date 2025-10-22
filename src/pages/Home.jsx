@@ -69,7 +69,7 @@ const Home = () => {
               >
                 Get A Free Consultation
               </ArrowButton>
-              <Link className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-white text-white bg-transparent hover:bg-white hover:text-black">
+              <Link to="/services" className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-white text-white bg-transparent hover:bg-white hover:text-black">
                 Our Services
               </Link>
             </div>

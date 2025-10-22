@@ -5,15 +5,15 @@ import {
 } from "../../content/constant";
 import SubHeading from "../common/SubHeading";
 
-const Portfolio = ({ page }) => {
+const Portfolio = ({ page, heading }) => {
   const portfolio =
     page === "web" ? webDevelopmentPortfolio : appDevelopmentPortfolio;
   return (
     <div className="wrapper py-10 space-y-4">
       <div className="flex flex-col items-center">
         <SubHeading heading="Portfolio" className="text-white" />
-        <h2 data-aos="fade-up" className="text1 text-center">
-          Few of Our Projects
+        <h2 data-aos="fade-up" className="text1 text-center mx-auto max-w-6xl">
+          {heading ? heading : "Few of Our Projects"}
         </h2>
       </div>
       <div

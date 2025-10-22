@@ -1,5 +1,4 @@
 import banner from "../assets/videos/aboutus.mp4";
-import CountUp from "react-countup";
 import aboutUsImg from "../assets/images/about-us.png";
 import SubHeading from "../components/common/SubHeading";
 import { Link } from "react-router-dom";
@@ -65,32 +64,20 @@ const AboutUs = () => {
             </div>
             <div
               data-aos="fade-up"
-              className="grid sm:grid-cols-2 md:grid-cols-4 gap-7"
+              className="grid sm:grid-cols-2 gap-5"
             >
-              {[
-                { number: 200, suffix: "+", title: "Projects Completed" },
-                { number: 150, suffix: "+", title: "Satisfied Clients" },
-                { number: 2, suffix: "+", title: "Years of Experience" },
-                { number: 100, suffix: "%", title: "Success Rate" },
-              ].map((item) => (
-                <div
-                  key={item.title}
-                  className="flex flex-col items-start text-center gap-2"
-                >
-                  <span className="text2">
-                    <CountUp
-                      end={item.number}
-                      suffix={item.suffix}
-                      enableScrollSpy
-                      scrollSpyOnce
-                      duration={2}
-                    />
-                  </span>
-                  <p className="uppercase text-sm text-white/70">
-                    {item.title}
-                  </p>
-                </div>
-              ))}
+              <div className="flex items-center gap-3 bg-[#121212] p-4 rounded-lg">
+                <div className="w-3 h-3 min-w-3 bg-primary rounded-full"></div>
+                <p className="text-white/90 font-medium">
+                  Building reliable solutions with modern tech for global clients
+                </p>
+              </div>
+              <div className="flex items-center gap-3 bg-[#121212] p-4 rounded-lg">
+                <div className="w-3 h-3 min-w-3 bg-secondary rounded-full"></div>
+                <p className="text-white/90 font-medium">
+                  Dedicated to excellence in every project we deliver
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +106,7 @@ const AboutUs = () => {
             </p>
             <div>
               <Link
-                to="/contact"
+                to="/contact-us"
                 className="btn-fullrounded flex items-center gap-2 bg-primary text-white hover:bg-primary/80 w-fit capitalize"
               >
                 get in touch <FaArrowRightLong className="mt-[.15rem]" />

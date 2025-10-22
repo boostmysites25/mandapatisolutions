@@ -207,7 +207,7 @@ const LandingPage = ({ page }) => {
       <ServicesSection page={page} />
       <VideoSection variant="schoolApp" />
       <VideoSection variant="jesusSchool" />
-      <Portfolio page={page} />
+      <Portfolio page={page} heading='Delivering innovative solutions across education, healthcare, logistics, and more' />
       <OurProcess />
       <Testimonials />
       <Faq />
